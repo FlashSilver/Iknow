@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#21262a" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/topred" >
+
+        <Button
+            android:id="@+id/answerback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:onClick="onClickComeBack"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="问题详情"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="分享"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <com.qiadao.tool.RoundImageView
+        android:id="@+id/launcherhead"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/actionbar_add_icon" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/launcherhead"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/questioncontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:text=""
+            
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="#ffffff" />
+
+     
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/answerlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout3" >
+    </ListView>
+   
+    
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/launcherhead"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/launcherhead"
+        android:background="@drawable/yuyin_down" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/wentirela"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/name"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/launcherhead"
+        android:background="@drawable/jiagefan" >
+           <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"   
+        android:layout_below="@+id/price"
+        android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/animation"
+        style="@style/publicloadingProgressStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/huida"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/huida_up"
+        android:visibility="gone" />
+<Button
+        android:id="@+id/xuanze"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="选择答案"
+        android:onClick="xuanze"
+        android:textColor="#ffffff"
+        android:background="@drawable/xuanze_bottom"
+        android:visibility="gone" />
+
+<LinearLayout
+    android:id="@+id/jiangli"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:weightSum="1"
+    android:visibility="gone" >
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+		android:layout_weight="0.3"
+        android:background="#6E645A"
+        android:onClick="cancel"
+         android:textColor="#ffffff"
+        android:text="取消" />
+
+    <Button
+        android:id="@+id/honor"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.7"
+        android:background="#FF6666"
+        android:onClick="honor"
+        android:text="悬赏"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

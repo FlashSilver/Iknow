@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#21262a" >
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_red_kuang" >
+
+
+        <TextView                                       
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="name" />
+
+        
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/top_white_kuang" />
+    
+    <Button
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addmoney"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/personal_botton"
+        android:text="帮助反馈"
+        android:onClick="tohelp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/addmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/help"
+       android:onClick="tomanage"
+        android:layout_alignLeft="@+id/manage"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/personal_botton"
+        android:text="注销"
+        android:textColor="#ffffff" />
+
+
+    <Button
+        android:id="@+id/manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addmoney"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:onClick="toaddmoney"
+        android:background="@drawable/personal_botton"
+        android:text="充值提现"
+        android:textColor="#ffffff" />
+  <LinearLayout
+        android:id="@+id/group"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guidePages"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/userhead"
+        
+        android:layout_centerHorizontal="true" >
+    </android.support.v4.view.ViewPager>
+
+    <com.qiadao.tool.RoundImageView
+        android:id="@+id/roundImageView1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/white" />
+
+    <com.qiadao.tool.RoundImageView
+        android:id="@+id/userhead"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="41dp"
+        android:src="@drawable/touxian" />
+
+</RelativeLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qiadao.iknow"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+    
+    
+	<permission android:name="com.qiadao.iknow.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="com.qiadao.iknow.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+	 <uses-permission android:name="android.permission.INTERNET" />
+	 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	 <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	 <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+	 <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	 <!-- 蓝牙分享所需的权限 -->
+	  <uses-permission android:name="android.permission.BLUETOOTH" />
+	  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="com.qiadao.iknow.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".GuideActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.qiadao.firstfragment.LaunchFragment"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.qiadao.firstfragment.SquareFragment" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.qiadao.firstfragment.MessageFragment" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.qiadao.firstfragment.PersonalFragment" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+			 android:name="cn.sharesdk.framework.ShareSDKUIShell"
+			 android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			 android:configChanges="keyboardHidden|orientation|screenSize"
+			 android:screenOrientation="portrait"
+			 android:windowSoftInputMode="stateHidden|adjustResize" >
+			 <intent-filter>
+				 <data android:scheme="tencent100371282" />
+				 <action android:name="android.intent.action.VIEW" />
+				 <category android:name="android.intent.category.BROWSABLE" />
+				 <category android:name="android.intent.category.DEFAULT" />
+			 </intent-filter>
+		 </activity>
+         <activity
+			 android:name=".wxapi.WXEntryActivity"
+			 android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			 android:configChanges="keyboardHidden|orientation|screenSize"
+			 android:exported="true"
+			 android:screenOrientation="portrait" /> 
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".ReturnActivity" >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1104461804" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信支付注册 -->
+        <activity-alias
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+        <!-- 支付宝注册 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <!-- 壹收款注册 -->
+
+        <activity
+            android:name="com.pingplusplus.libone.PayActivity"
+            android:label="@string/title_activity_pay" />
+        <activity
+            android:name="com.pingplusplus.libone.PaySucessedActivity"
+            android:label="@string/title_activity_pay_sucessed" />
+        <activity
+            android:name="com.pingplusplus.libone.PayFiledActivity"
+            android:label="@string/title_activity_pay_filed" />
+
+        <!-- 微信分享回调 -->
+        <activity android:name="com.qiadao.secondfragment.MarkFragment" >
+        </activity>
+        <activity android:name="com.qiadao.firstfragment.LaunchFragment2" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.AcountManage" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.RechargeFragment" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.HelpFragment" >
+        </activity>
+        <activity android:name="cn.sharesdk.demo.tpl.LoginActivity" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.AnswerFragment" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.CloseFragment" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.NewFragment" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.ExpenseFragment" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.AnswerFragment2" >
+        </activity>
+        <activity android:name="com.qiadao.chat.MainActivity" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.Asset" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.Week" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.Today" >
+        </activity>
+        <activity android:name="com.qiadao.secondfragment.Month" >
+        </activity>
+        
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.qiadao.iknow" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+ <!-- Required  显示通知栏 -->
+                <category android:name="com.qiadao.iknow" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+ 
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.qiadao.iknow.MyReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <category android:name="com.qiadao.iknow" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="f9998687bc684c53d0685e83" />
+ <!-- </>值来自开发者平台取得的AppKey -->
+        <activity android:name="com.qiadao.secondfragment.MessageContent"></activity>
+        <activity android:name="com.qiadao.chat.PrivateChat"></activity>
+        <activity android:name="com.qiadao.secondfragment.Money"></activity>
+        <activity android:name="com.qiadao.secondfragment.ExtractFragment"></activity>
+
+        <!-- 友萌 -->
+         <activity
+        android:name="com.umeng.fb.ConversationActivity"/>
+        <meta-data
+        android:value="5564686167e58ef919002625"
+        android:name="UMENG_APPKEY"/>
+        <meta-data
+        android:value="Channel ID"
+        android:name="UMENG_CHANNEL"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_name">谁知道</string>
+    <string name="launch">首页</string>
+    <string name="square">消息</string>
+    <string name="message">关于我</string>
+    <string name="personal">发现</string>
+    <string name="text_begin">请开始说话…</string>
+    <string name="text_upload_contacts">上传联系人</string>
+    <string name="text_upload_userwords">上传用户词表</string>
+    <string name="text_upload_success">上传成功</string>
+    <string name="text_userword_empty">词表下载失败或内容为空</string>         
+    <string name="text_download_success">下载成功</string>           
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>               
+    <string name="pref_title_iat_dwa">结果动态修正</string>
+    <string name="qq_login">登录</string>
+    <string name="qq_logout">退出当前账号</string>
+    <string name="login_with_weixin">用微信登录</string>
+    <string name="login_with_sina_weibo">用新浪微博登录</string>
+    <string name="login_with_qzone">用QQ空间登录</string>
+    <string name="login_with_other_plat">其他帐号登录</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出; \n 如微信登录，需要微信客户端</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="if_register_needed">如果您需要注册功能…</string>
+    <string name="tpl_key_user_icon">头像</string>
+    <string name="tpl_key_user_name">昵称</string>
+    <string name="tpl_key_user_gender">性别</string>
+    <string name="tpl_key_user_note">备注</string>
+    <string name="tpl_value_user_name">昵称</string>
+    <string name="tpl_value_user_gender">性别</string>
+    <string name="tpl_value_user_note">请填写备注信息</string>
+    <string name="tpl_sign_user_info">用户信息</string>
+    <string name="tpl_sign_up">注册</string>
+    <string name="tpl_girl">女</string>
+    <string name="tpl_boy">男</string>
+    <string name="tpl_camera">拍照</string>
+    <string name="tpl_picture">从相册获取</string>
+    <string name="tpl_ok">确定</string>
+    <string name="tpl_cancel">取消</string>
+    <string name="tpl_change_user_name_title">更改名字</string>
+    <string name="tpl_change_user_note_title">更改备注</string>
+    <string name="tpl_input_user_name_hint">好名字可以让你的朋友更容易记住你</string>
+    <string name="tpl_input_user_note_hint">自定义备注信息，给你带来更多吸引</string>
+    <string name="if_register_neede">如果您需要注册功能…</string>
+    <string name="after_auth">一般来说第三方登录时，第三方平台已经为您完成用户身份校验，您可以放心让用户登录。\n\n但如果您需要判断用户是否为新用户，可以在授权操作完成后，将用户的信息通过字段“HashMap userInfo”携带给login方法。客户端通过“String userId”执行登录请求，如果服务端判定此userId为未注册用户，可以将userInfo发送给注册接口，获取用户在此平台上的昵称、头像等数据，然后执行注册</string>
+    <string name="p2refresh_head_load_more">加载更多</string>
+       <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新</string>
+    <string name="p2refresh_doing_end_refresh">加载中</string>
+    <string name="p2refresh_refresh_lasttime">最近更新</string>
+    <!-- 合成 -->
+    <string-array name="engine_entries">
+        <item>本地合成</item>
+        <item>在线合成</item>
+    </string-array>
+    <string-array name="engine_values">
+        <item>local</item>
+        <item>cloud</item>
+    </string-array>
+    <string-array name="voicer_cloud_entries">
+        <item>小燕</item>
+        <item>小宇</item>
+        <item>凯瑟琳</item>
+        <item>亨利</item>
+        <item>玛丽</item>
+        <item>小研</item>
+        <item>小琪</item>
+        <item>小峰</item>
+        <item>小梅</item>
+        <item>小莉</item>
+        <item>小蓉</item>
+        <item>小芸</item>
+        <item>小坤</item>
+        <item>小强 </item>
+        <item>小莹</item>
+        <item>小新</item>
+        <item>楠楠</item>
+        <item>老孙</item>
+    </string-array>
+        <string-array name="voicer_cloud_values">
+    
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+    <string-array name="stream_entries">
+        <item>通话</item>
+        <item>系统</item>
+        <item>铃声</item>
+        <item>音乐</item>
+        <item>闹铃</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="stream_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="tts_toast_format" formatted="false">缓冲进度为%d%%，播放进度为%d%%</string>
+    <!-- 语言 -->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>河南话</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>henanese</item>
+        <item>en_us</item>
+    </string-array>
+    <!-- 语音评测 -->
+    <string name="text_en_word">"[word]\napple\nbanana\norange"</string>
+    <string name="text_en_sentence">"The quick brown fox jumps over the lazy dog."</string>
+    <string name="text_cn_syllable">"知，痴，是"</string>
+    <string name="text_cn_word">"磁铁，率领，脆弱，动手，古筝"</string>
+    <string name="text_cn_sentence">"一座座雪峰插入云霄，峰顶银光闪闪，大大小小的湖泊，像颗颗宝石镶嵌在彩带般的沟谷中。"</string>
+
+    <string-array name="ise_language_entries">
+        <item>英语</item>
+        <item>汉语</item>
+    </string-array>
+    <string-array name="ise_language_values">
+        <item>en_us</item>
+        <item>zh_cn</item>
+    </string-array>
+    <string-array name="category_entries">
+        <item>单字</item>
+        <item>词语</item>
+        <item>句子</item>              
+    </string-array>     
+    <string-array name="category_values">
+        <item>read_syllable</item>
+        <item>read_word</item>
+        <item>read_sentence</item>
+    </string-array>
+    <string-array name="result_level_entries">
+        <item>plain</item>
+        <item>complete</item>
+    </string-array>
+    <!-- 标点符号 -->
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="dwa_entries">
+        <item>开启</item>
+        <item>关闭</item>
+    </string-array>
+    <!-- 提示安装语音+对话框 -->
+    <string name="superman_ok">确 定</string>
+    <string name="superman_cancel">取 消</string>
+    <string name="superman_title">来 吧 !</string>
+    <string name="superman_content">让我把你的应用变的能听会说吧！</string>
+    <string name="str_orange">#fe7b27</string>
+    <string name="basic_action_1">删除</string>
+    <string name="basic_action_2">Action_2</string>
+
+<!--支付字符  -->
+        <string name="title_test_activity">壹收款</string>
+    <string name="title_activity_pay">支付</string>
+    <string name="title_activity_pay_sucessed">支付成功</string>
+    <string name="title_activity_pay_filed">支付失败</string>
+    <string name="title_activity_success">支付成功</string>
+    <string name="create_bill">成功下单</string>
+    <string name="label_bill_name">订单号</string>
+    <string name="label_amount">总金额</string>
+    <string name="title_activity_pay_failed">支付失败</string>
+    <string name="pay_failed">支付失败</string>
+    <string name="back_activity_pay">再试一次</string>
+    <string name="copyright">支付接入由Ping++提供</string>
+    <string name="alipay">支付宝</string>
+    <string name="wechar">微信支付</string>
+    <string name="bfb">百度钱包</string>
+    <string name="upmp">银联支付</string>
+    <string name="prompt_pay_falied">可能因为网络过于繁忙</string>
+    <string name="continue_buy">继续购物</string>
+    <string name="good_item_name">橡胶花瓶</string>
+</resources>

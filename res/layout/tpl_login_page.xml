@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#21262a"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:text="Knowledge is money."
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/tvWeibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="121dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/weib_login"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/tvWeixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvWeibo"
+        android:layout_alignBottom="@+id/tvWeibo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/weixin_login"
+        android:onClick="weixin"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+        <ProgressBar
+            android:id="@+id/load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/animdraw2"
+            android:indeterminateDuration="1500" />
+
+</RelativeLayout>

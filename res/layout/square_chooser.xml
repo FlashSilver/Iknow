@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#111111" >
+
+    <Button
+        android:id="@+id/newest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="时间最近" 
+        android:background="#333333"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="距离最近"
+        
+        android:background="#333333"
+        android:textColor="#ffffff" />
+   
+    <Button 
+        android:id="@+id/high"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="价格最高" 
+        android:background="#333333"
+        android:textColor="#ffffff"/> 
+    
+   
+</LinearLayout>
+

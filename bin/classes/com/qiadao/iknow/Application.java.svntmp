@@ -1,0 +1,16 @@
+package com.qiadao.iknow;
+
+import java.io.File;
+
+import com.nostra13.universalimageloader.utils.StorageUtils;
+import com.qiadao.tool.FileUtils;
+
+public class Application extends android.app.Application {
+	File cacheDir;
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		FileUtils.getInstance(getApplicationContext());
+	 cacheDir = StorageUtils.getOwnCacheDirectory(getApplicationContext(), "imageloader/Cache");
+	}
+}

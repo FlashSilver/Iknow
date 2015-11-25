@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/startthree" >
+
+    <Button
+        android:id="@+id/comein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="174dp"
+        android:background="@drawable/personal_botton"
+        android:text="开启谁知道之旅"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

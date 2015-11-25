@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#21262a">
+
+    <ImageView
+        android:id="@+id/userface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/actionbar_add_icon" />
+
+    <TextView
+        android:id="@+id/dialogbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="@drawable/dialog_box" />
+
+</RelativeLayout>

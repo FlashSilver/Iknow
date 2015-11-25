@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#21262a" >
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topred" >
+
+        <RelativeLayout
+            android:id="@+id/chooser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/choosearrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/choosetext"
+                android:src="@drawable/ic_menu_trangle_down" />
+
+            <TextView
+                android:id="@+id/choosetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="时间最近"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="加载中..."
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+    <com.qiadao.effect.MyListView
+        android:id="@+id/squarelistview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rela"
+        android:layout_centerHorizontal="true"
+        android:divider="#21262a"
+        android:dividerHeight="0dp" >
+ </com.qiadao.effect.MyListView>
+</RelativeLayout>

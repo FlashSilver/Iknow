@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="#21262a" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="41dp" >
+
+        <TextView
+            android:id="@+id/answererid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/answerername"
+            android:layout_marginRight="40dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/answerername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="14dp"
+            android:text="ziv"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <com.qiadao.tool.RoundImageView
+        android:id="@+id/answererhead"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23dp"
+        android:src="@drawable/case_on" />
+
+
+</RelativeLayout>

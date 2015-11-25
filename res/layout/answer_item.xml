@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="#21262a" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="80dp"
+        android:layout_marginLeft="23dp" >
+   
+
+    <com.qiadao.tool.RoundImageView
+        android:id="@+id/answererhead"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/touxian" />
+
+    <RelativeLayout
+        android:id="@+id/answerbo"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/dialogbox" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="29dp" >
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:src="@drawable/sounds" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/relativeLayout3"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1" >
+
+        <TextView
+            android:id="@+id/answerbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" 
+            android:visibility="gone"
+            android:focusable="false"/>
+
+                </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/chat"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/answererhead"
+        android:layout_toRightOf="@+id/answerbo"
+        android:background="@drawable/siliao" 
+        android:focusable="false"/>
+
+<CheckBox
+    android:id="@+id/chooseperson"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true" 
+    android:visibility="gone"
+    android:focusable="false"/>
+
+ </RelativeLayout>
+</RelativeLayout>

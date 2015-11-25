@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="170dp"
+    android:background="@drawable/quan" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="我的财产"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/myasset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerInParent="true"
+        android:text="updating"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
